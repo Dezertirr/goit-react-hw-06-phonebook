@@ -1,7 +1,7 @@
 import { Toaster } from 'react-hot-toast';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactsList } from './contactsList/ContactsList';
-import { Filter } from './filter/Filter';
+import { Filter } from './Filter/Filter';
 
 import css from './APP.module.css';
 
