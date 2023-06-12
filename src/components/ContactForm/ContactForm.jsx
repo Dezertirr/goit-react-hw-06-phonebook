@@ -28,14 +28,16 @@ export function ContactForm() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    if (contacts.some(item => item.name === name)) {
+    const lowerCaseName = name.toLowerCase();
+    if (contacts.some(item => item.name.toLowerCase() === lowerCaseName)) {
       toast.error('Contact already exists');
       return;
     }
     dispatch(addContact({ name, number }));
-
+  
     reset();
   };
+  
 
   const reset = () => {
     setName('');
